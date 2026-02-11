@@ -1,3 +1,3 @@
 # Rdkit-descriptors
 ## Code summary:
-* Input SMILES annotation -> transform SMILES to molecular descriptors -> save as excel table -> <3
+* Input MOL/SMILES request from e.g. DrugBank -> transform SMILES to molecular descriptors -> save as excel table -> <3
