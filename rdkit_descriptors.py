@@ -1,4 +1,3 @@
-from pandas.core.interchange.dataframe_protocol import DataFrame
 from rdkit import Chem
 import requests
 import pandas as pd
