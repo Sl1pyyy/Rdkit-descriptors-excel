@@ -13,7 +13,7 @@ df = pd.DataFrame({'SMILES': smiles_list})
 
 def descriptors():
 
-    all_descriptors=  []
+    all_descriptors =  []
 
     for smile in df['SMILES']:
         mol = Chem.MolFromSmiles(smile)
