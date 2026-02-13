@@ -2,7 +2,7 @@ from rdkit import Chem
 from rdkit.Chem import Descriptors
 import pandas as pd
 
-#Creation of an Excel file with SMILES annotations in the first column (SMILES are random for purpose)
+#Creation of a DataFrame with SMILES annotations in the first column (SMILES are random for purpose)
 smiles_list = [
 '[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)[C@H](N)C1=CC=C(O)C=C1)C(O)=O',
 'N[C@]([H])(C)C(=O)O',
@@ -11,6 +11,7 @@ smiles_list = [
 
 df = pd.DataFrame({'SMILES': smiles_list})
 
+#Function to obtain all possible descriptors
 def descriptors():
 
     all_descriptors =  []
@@ -29,6 +30,7 @@ def descriptors():
 
     return pd.DataFrame(all_descriptors)
 
+#Summoning the function + saving Excel table
 if __name__ == '__main__':
     df = descriptors()
 
